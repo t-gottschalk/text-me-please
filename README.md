@@ -6,7 +6,6 @@ Created while studying Node and Express fundamentals. This assignment was to mak
 * Building an Express server
 * Express Routing
 * Configuring sensitive data like API Keys and Secrets
-* React Event Handlers
 
 Technology, Libraries, and APIs used:
 
