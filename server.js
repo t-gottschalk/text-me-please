@@ -26,11 +26,11 @@ io.on('connection', (socket) => {
 });
 
 // Configure Express
+app.use(bodyParser.json()); // Parse json
+app.use(bodyParser.urlencoded({ extended: true })); // Parse html form data
 app.set('view engine', 'html');
 app.engine('html', ejs.renderFile);
 app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json()); // Parse json
-app.use(bodyParser.urlencoded({ extended: true })); // Parse html form data
 
 // Express Routes
 app.get('/', (req, res) => {
