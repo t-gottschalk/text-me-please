@@ -19,4 +19,4 @@ Technology, Libraries, and APIs used:
 
 Getting Started GitHub Pages link:
 
-https://t-gottschalk.github.io/text-me-please
+https://pacific-atoll-54544.herokuapp.com
