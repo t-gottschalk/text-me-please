@@ -8,6 +8,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+const server = app.listen(process.env.PORT || 3000, () => {
+  console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
+});
+
 // Nexmo initialization
 const nexmo = new Nexmo({
   apiKey: config.api_key,
@@ -70,8 +74,4 @@ app.post('/', (req, res) => {
       console.dir(responseData);
     }
   });
-});
-
-const server = app.listen(process.env.PORT || 3000, () => {
-  console.log('Express server listening on port %d in %s mode', server.address().port, app.settings.env);
 });
