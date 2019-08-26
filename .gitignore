@@ -4,4 +4,4 @@ temp.js
 persist
 process.env
 .env
-config.js
+server/config.js
